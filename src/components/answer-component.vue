@@ -5,25 +5,33 @@
     </div>
 
     <div class="answer__form">
-    <v-list class="answer__form__items">
-      <v-row>
-        <v-col
-          class="form-item"
-          v-for="index in 27"
-          :key="index"
-          cols="3"
-        >
-          <v-text-field
-            clearable
-            v-model="formFields[index]"
-            :label="`Livro ${index}`"
-            variant="outlined"
-          ></v-text-field>
-        </v-col>
-      </v-row>
-    </v-list>
-  </div>
+      <v-list class="answer__form__items">
+        <v-row>
+          <v-col
+            class="form-item"
+            v-for="index in 27"
+            :key="index"
+            cols="3"
+          >
+            <v-text-field
+              clearable
+              v-model="formFields[index]"
+              :label="`Livro ${index}`"
+              variant="outlined"
+            ></v-text-field>
+          </v-col>
+        </v-row>
+      </v-list>
+    </div>
 
+    <div class="footer">
+      <v-btn 
+        class="footer__play-btn"
+        variant="outlined"
+      >
+        Jogar!
+      </v-btn>
+    </div>
   </div>
 </template>
 
@@ -70,4 +78,16 @@ export default defineComponent({
   height: 95px !important
   display: flex
   justify-content: center
+.footer
+  display: flex
+  justify-content: space-around
+  margin: 5px
+  &__play-btn
+    align-self: center
+    margin: 5px
+    font-size: 15px
+    font-weight: 700
+    background: #FDD610
+    width: 120px
+    height: 60px !important
 </style>

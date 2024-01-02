@@ -18,22 +18,6 @@
         class="container__answer"
       />
     </div>
-
-    <div class="footer">
-      <v-btn 
-        class="footer__sort-btn"
-        variant="outlined"
-      >
-        Embaralhar
-      </v-btn>
-      <v-btn 
-        class="footer__play-btn"
-        variant="outlined"
-        @click="testeBtn"
-      >
-        Jogar!
-      </v-btn>
-    </div>
   </div>
 </template>
 
@@ -50,13 +34,9 @@ components: {
   },
 
   methods: {
-    testeBtn,
   }
 });
 
-function testeBtn() {
-  return console.log('deu bom');
-}
 </script>
 
 <style lang="sass" scoped>
@@ -86,24 +66,4 @@ function testeBtn() {
     border: 2px solid #40e4c0
     border-radius: 10px
     flex: 1.2
-.footer
-  display: flex
-  justify-content: space-around
-  margin: 5px
-  &__play-btn
-    align-self: center
-    margin: 5px
-    font-size: 15px
-    font-weight: 700
-    background: #FDD610
-    width: 120px
-    height: 60px !important
-  &__sort-btn
-    align-self: center
-    margin: 5px
-    font-size: 15px
-    font-weight: 700
-    border: 2px solid black
-    width: 120px
-    height: 60px !important
 </style>
