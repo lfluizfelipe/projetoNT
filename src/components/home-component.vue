@@ -10,7 +10,7 @@
 
     <div class="container">
 
-      <list-books-component 
+      <book-list-component 
         class="container__list"
       />
     
@@ -23,13 +23,13 @@
 
 <script lang="ts">
 import { defineComponent } from 'vue';
-import ListBooksComponent from './list-books-component.vue';
+import BookListComponent from './book-list-component.vue';
 import AnswerComponent from './answer-component.vue';
 
 export default defineComponent({
 name: 'HomeComponent',
 components: {
-    ListBooksComponent,
+    BookListComponent,
     AnswerComponent,
   },
 

@@ -39,7 +39,7 @@ import { defineComponent, ref } from 'vue';
 import {database} from '../database/database'
 
 export default defineComponent({
-name: 'ListBooksComponent',
+name: 'BookListComponent',
   setup() {
     const descriptions = ref([...database.map(item => item.description)]);
 
